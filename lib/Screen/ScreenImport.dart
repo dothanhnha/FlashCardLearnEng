@@ -1,5 +1,7 @@
+import 'package:cardlearnenglish/CustomWidget/DropDownBtn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_typeahead/flutter_typeahead.dart';
 
 class ScreenImport extends StatefulWidget {
   @override
@@ -19,39 +21,11 @@ class _ScreenImportState extends State<ScreenImport> {
                 SizedBox(
                   height: 50,
                 ),
-                itemTextInput('Word'),
-                itemTextInput('Type'),
-                itemTextInput('Mean'),
-                itemTextInput('Example'),
+                DropDownBtn(),
+                DropDownBtn()
               ],
             ),
           ),
         ));
-  }
-
-  Widget itemTextInput(String label) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 2,
-            child: Text(label ,style: TextStyle(fontWeight: FontWeight.bold),),
-          ),
-          Expanded(
-            flex: 8,
-            child: TextField(
-              autofocus: false,
-              decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Colors.grey[300],
-                  contentPadding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15)))),
-            ),
-          ),
-        ],
-      ),
-    );
   }
 }

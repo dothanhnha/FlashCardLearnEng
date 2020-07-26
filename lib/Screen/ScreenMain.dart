@@ -1,6 +1,7 @@
 import 'dart:io';
 
-import 'file:///C:/Space/card_learn_english/lib/Model/ItemCategoryVocab.dart';
+
+import 'package:cardlearnenglish/CustomWidget/ItemCategoryVocab.dart';
 import 'package:cardlearnenglish/Model/DataScreenMain.dart';
 import 'package:cardlearnenglish/Model/Vocabulary.dart';
 import 'package:cardlearnenglish/Process/ProcessImport.dart';
